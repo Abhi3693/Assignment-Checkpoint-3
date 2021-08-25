@@ -1,0 +1,472 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* variables */
+:root {
+    --primary:rgb(0,44,91);
+    --bg:rgb(245, 245, 252);
+    --text:rgb(24,28,51);
+    --button:rgb(252,100,106);
+}
+
+/* custom style */
+
+*,
+*::before
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,a {
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+    display: inline-block;
+}
+.padding {
+    padding: 150px 0;
+}
+
+/* Button */
+
+.btn {
+    font-size: 10px;
+    color: #fff;
+    padding: 8px 20px;
+    background-color:var(--button) ;
+    border: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+.btn-secondary {
+    color: var(--button);
+    background-color: #fff;
+    border: 1px solid var(--button);
+}
+
+/* general */
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.relative {
+    position: relative;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.center {
+    display: flex;
+    justify-content: center;
+}
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+.flex-start {
+    display: flex;
+    justify-content: flex-start;
+}
+.align-item-start {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.flex-20 {
+    flex: 0 1 20%;
+}
+.flex-22 {
+    flex: 0 1 22%;
+}
+.flex-30 {
+    flex: 0 1 30%;
+}
+.flex-32 {
+    flex: 0 1 32%;
+}
+.flex-40 {
+    flex: 0 1 40%;
+}
+.flex-45 {
+    flex: 0 1 45%;
+}
+.flex-50 {
+    flex: 0 1 50%;
+}
+.flex-100 {
+    flex: 0 1 100%;
+}
+.flex-70 {
+    flex: 0 1 70%;
+}
+.flex-80 {
+    flex: 0 1 80%;
+}
+.flex-60 {
+    flex: 0 1 60%;
+}
+
+
+/* headings */
+
+h1 {
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--primary);
+    width: 40%;
+    text-transform: uppercase;
+    margin: 8px 0 40px 0;
+}
+h2 {
+    text-transform: capitalize;
+    color: var(--text);
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+h3 {
+    font-size: 20px;
+    color: var(--text);
+    font-weight: 500;
+    font-weight: 700;
+    text-transform: none;
+}
+h4 {
+    font-size: 15px;
+    margin: 20px 0;
+}
+h5 {
+    font-size: 12px;
+    color: var(--button);
+}
+
+/* header */
+
+.header {
+    background-color:var(--primary) ;
+    padding: 8px 0;
+}
+.header address {
+    color: #fff;
+    margin-right:50px ;
+    font-family: 'Poppins', sans-serif;
+}
+.social-media-icons {
+    margin-left: 20px;
+}
+
+/* hero */
+
+.hero {
+    width: 100%;
+    background: url(../media/h1_hero.jpeg) 50% 50% no-repeat;
+    background-size: cover;
+    top: 50px;
+    height: 80vh;
+}
+.hero .container {
+    position: relative;
+}
+.hero-header {
+    padding: 20px 0;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+}
+.nav-bar a {
+    color: var(--primary);
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+.btn-primery {
+    margin-left: 50px;
+}
+.brand-logo img {
+    width: 60%;
+}
+.hero-heading {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
+.welcome {
+    color: var(--button);
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+/* about */
+
+.about-article-1 {
+    background-color: var(--bg);
+    margin-top: 48px;
+}
+.col {
+    width: 30%;
+}
+.col img {
+    width: 100%;
+}
+.col-container {
+    width: 70%;
+    margin: 0 auto;
+}
+.col-3 {
+    padding: 20px 30px;
+    border: 2px solid var(--button);
+    background-color: #fff;
+    width: 22%;
+}
+hr {
+    width: 30%;
+    border-top: 2px solid red ;
+    text-align: start;
+    margin: 20px 0;
+}
+.col-3 a {
+    color: var(--text);
+    margin-top: 30px;
+
+}
+.article-2-text {
+    width: 20%;
+    background-color:rgba(255,254,254,0.8);
+    padding: 30px;
+    position: absolute;
+    right: 180px;
+    bottom: 0;
+}
+.article-2-text p {
+    margin: 30px 0;
+}
+.about-article-2 img {
+    width: 70%;
+}
+
+/* service */
+
+.service {
+    margin-bottom: 80px;
+}
+.service-box-wrapper {
+    margin:70px auto;
+    width: 70%;
+}
+.service-box {
+    width: 26%;
+    background-color: var(--bg);    
+    text-align: center;
+    padding: 20px;
+}
+.fa-clipboard-list, .fa-clipboard {
+    font-size: 30px;
+}
+
+
+/* cases section */
+
+
+.cases-article-1 {
+    background-color: var(--bg);
+}
+.case-container {
+    padding: 80px 0;
+    width: 70%;
+    align-items: flex-start;
+}
+.case-col-1 {
+    width: 30%;
+}
+.case-col-2 {
+    width: 60%;
+}
+.case-col-2 img {
+    width: 95%;
+}
+.case-col-1 h3 {
+    margin:40px 0 20px 0 ;
+}
+.case-col-1 p {
+    margin-bottom:40px;
+}
+.fa-star {
+    color: rgb(251,187,67);
+    margin-bottom: 20px;
+}
+.article-2-wrapper {
+    width: 50%;
+    text-align: center;
+}
+.article-2-p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.cases-article-2-img {
+    width: 100px;
+    margin-bottom: 30px;
+}
+.CLIFFORD {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* contact section */
+
+.news-container {
+    width: 70%;  
+    margin: 50px auto; 
+}
+.news-text {
+    padding: 20px;
+}
+.news-col {
+    width: 32%;
+    background-color: var(--bg);
+}
+.news-img {
+    width: 100%;
+}
+.request-for-call {
+    background-color: var(--primary);
+}
+.request-text {
+    width: 30%;
+}
+.request-text-p-h3 {
+    color: #fff;
+    padding: 10px;
+}
+.request-forms {
+    width: 60%;
+}
+.form {
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid rgb(152, 152, 152);
+}
+.form-container {
+    margin-top: 20px;
+}
+.form-1 {
+    width: 45%;
+}
+.form-2 {
+    width: 45%;
+}
+.form-3 {
+    width: 80%;
+}
+.form-4 {
+    width: 15%;
+}
+.form span {
+    color: #fff;
+}
+
+
+/* footer */
+
+.margin-bottom-20px {
+    margin-bottom: 20px;
+}
+.footer {
+    background-color: var(--bg);
+}
+.footer-container {
+    width: 60%;
+    margin: 0 auto;
+}
+.footer-address {
+    color: var(--text);
+}
+.footer a {
+    color: var(--text);
+    font-weight: 400;
+    margin-left: 0;
+}
+.footer-brand-logo-container {
+    width: 30%;
+}
+.comapny-nav, .service-nav, .get-in-touch li {
+    line-height: 2;
+}
+.social-media-footer a{
+    margin-right: 10px;
+}
+.footer h4 {
+    margin-top: 0;
+}
+.footer hr {
+    width: 60%;
+    border-top: 2px solid rgb(210, 210, 210);
+    margin: 30px auto;
+}
+.colorib {
+    color: var(--button);
+}
+
+.small {
+    text-align: center;
+    color: var(--text);
+}
+.fa-heart {
+    color: var(--button);
+}
